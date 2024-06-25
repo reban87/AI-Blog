@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>git@github.com-reban87:reban87/AI-Blog.git/posts/Docker/docker.html</loc>
-    <lastmod>2024-06-25T04:51:53.612Z</lastmod>
+    <loc>git@github.com-reban87:reban87/AI-Blog.git/about.html</loc>
+    <lastmod>2024-06-25T05:24:29.101Z</lastmod>
   </url>
   <url>
     <loc>git@github.com-reban87:reban87/AI-Blog.git/index.html</loc>
+    <lastmod>2024-06-25T04:51:53.612Z</lastmod>
+  </url>
+  <url>
+    <loc>git@github.com-reban87:reban87/AI-Blog.git/posts/Docker/docker.html</loc>
     <lastmod>2024-06-25T04:51:53.612Z</lastmod>
   </url>
 </urlset>

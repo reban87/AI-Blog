@@ -1,5 +1,19 @@
 [
   {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Er. Rebanta Aryal",
+    "section": "",
+    "text": "Experience Machine Learning Engineer with 4+ years of proven expertise in Natural Language Processing, Machine Learning, Deep Learning. Solving a problem and gaining insights with the help of machine learning algorithms has always seemed to be a superpower for me. I am here to solve things, Learning a lot in the process.\n\nPublication:\n\nA Fire Hazard Assessment Using Sentinel Imagery; A Case Study Over Gippsland Australia\nThematic Mapping Method to Understand Distribution of Agriculture and Animal Production of European Union\nSmoke Detection from Satellite Imagery Using Deep Learning\n\n\n\nExperience:\n\nRippeyAI | NLP Engineer | April 2022 - June 2024\nInspiring Lab | Data Scientist | Oct 2022 - April 2022\nNational College of Engineering | Lecturer | Nov 2018 - Feb 2022"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome to my blog!",
+    "section": "",
+    "text": "Introduction to Docker\n\n\n\n\n\n\nmachine learning\n\n\nword vectors\n\n\nword embeddings\n\n\ntransformers\n\n\ndeep learning\n\n\n\n\n\n\n\n\n\nOct 23, 2022\n\n\nEr.Rebanta Aryal\n\n\n\n\n\n\nNo matching items"
+  },
+  {
     "objectID": "posts/Docker/docker.html",
     "href": "posts/Docker/docker.html",
     "title": "Introduction to Docker",
@@ -54,12 +68,5 @@
     "title": "Introduction to Docker",
     "section": "",
     "text": "Installation Related\nInstallation Steps for amazon ec2"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Welcome to my blog!",
-    "section": "",
-    "text": "Introduction to Docker\n\n\n\n\n\n\nmachine learning\n\n\nword vectors\n\n\nword embeddings\n\n\ntransformers\n\n\ndeep learning\n\n\n\n\n\n\n\n\n\nOct 23, 2022\n\n\nEr.Rebanta Aryal\n\n\n\n\n\n\nNo matching items"
   }
 ]

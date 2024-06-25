@@ -6,10 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Er.Rebanta Aryal">
-<meta name="dcterms.date" content="2022-10-23">
 
-<title>Welcome to my blog! - Introduction to Docker</title>
+<title>Welcome to my blog! - Er. Rebanta Aryal</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -25,22 +23,21 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../">
-<script src="../../site_libs/quarto-html/quarto.js"></script>
-<script src="../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -70,17 +67,17 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="../../styles.css">
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+  <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../../index.html">
+    <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">Welcome to my blog!</span>
     </a>
   </div>
@@ -91,7 +88,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../about.html"> 
+    <a class="nav-link active" href="./about.html" aria-current="page"> 
 <span class="menu-text">Er. Rebanta Aryal</span></a>
   </li>  
   <li class="nav-item compact">
@@ -117,113 +114,61 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-body">
-      <h1 class="title">Introduction to Docker</h1>
-                                <div class="quarto-categories">
-                <div class="quarto-category">machine learning</div>
-                <div class="quarto-category">word vectors</div>
-                <div class="quarto-category">word embeddings</div>
-                <div class="quarto-category">transformers</div>
-                <div class="quarto-category">deep learning</div>
-              </div>
-                  </div>
-  </div>
-    
-  
-  <div class="quarto-title-meta">
-
-      <div>
-      <div class="quarto-title-meta-heading">Author</div>
-      <div class="quarto-title-meta-contents">
-               <p>Er.Rebanta Aryal </p>
-            </div>
-    </div>
-      
-      <div>
-      <div class="quarto-title-meta-heading">Published</div>
-      <div class="quarto-title-meta-contents">
-        <p class="date">October 23, 2022</p>
-      </div>
-    </div>
-    
-      
-    </div>
-    
-  
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content quarto-banner-title-block" id="quarto-document-content">
-
-
-
-
-
-<section id="docker" class="level1">
-<h1>Docker</h1>
-<section id="what-is-docker" class="level2">
-<h2 class="anchored" data-anchor-id="what-is-docker">What is DOCKER?</h2>
+<div class="quarto-about-solana column-body content">
+  <div class="about-entity">
+    <div class="entity-contents">
+      <header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Er. Rebanta Aryal</h1>
+</div>
+<div class="quarto-title-meta">
+  </div>
+</header> <div class="about-links">
+  <a href="https://www.linkedin.com/in/rebanta-aryal/" class="about-link" rel="" target="">
+    <i class="bi bi-linkedin"></i>
+     <span class="about-link-text">LinkedIn</span>
+  </a>
+  <a href="https://github.com/reban87" class="about-link" rel="" target="">
+    <i class="bi bi-github"></i>
+     <span class="about-link-text">Github</span>
+  </a>
+  <a href="https://linktr.ee/rebanaryal" class="about-link" rel="" target="">
+    <i class="bi bi-gear-fill"></i>
+     <span class="about-link-text">Linktree</span>
+  </a>
+</div>
+      <div class="about-contents"><main class="content" id="quarto-document-content">
+<p>Experience Machine Learning Engineer with 4+ years of proven expertise in Natural Language Processing, Machine Learning, Deep Learning. Solving a problem and gaining insights with the help of machine learning algorithms has always seemed to be a superpower for me. I am here to solve things, Learning a lot in the process.</p>
+<section id="publication" class="level4">
+<h4 data-anchor-id="publication"><strong>Publication</strong>:</h4>
 <ul>
-<li>Containers allow a developer to package up an application with all of the parts it needs, such as libraries and other dependencies, and ship it all out as one package.</li>
-<li>Docker is an open source project that automates the deployment of applications inside software containers ## How Docker works? <img src="./docker.png" class="img-fluid" alt="Image"></li>
-<li>A developer will define all the applications and its dependencies and its requirements which is called as <strong>Docker File</strong>.</li>
-<li>Docker File can be used to create <strong>Docker Images</strong></li>
-<li>When we run docker image, we will get <strong>Docker Containers</strong>. So docker containers are the run time instances of docker image and these images can also be stored in an online cloud repositories which is <strong>Docker Hub</strong></li>
-<li>In <strong>Docker Hub</strong> , there are many publicly available images and you can store your own docker images as well.</li>
-<li>This image can be pulled to any environment like staging environment or test environment.</li>
-<li></li>
+<li><a href="https://www.researchgate.net/publication/343213614_A_Fire_Hazard_Assessment_Using_Sentinel_Imagery_A_Case_Study_Over_Gippsland_Australia"><em>A Fire Hazard Assessment Using Sentinel Imagery; A Case Study Over Gippsland Australia</em></a></li>
+<li><a href="http://dx.doi.org/10.13140/RG.2.2.11526.70725"><em>Thematic Mapping Method to Understand Distribution of Agriculture and Animal Production of European Union</em></a></li>
+<li><a href="https://www.researchgate.net/publication/378149891_SMOKE_SCENE_DETECTION_FROM_SATELLITE_IMAGERY_USING_DEEP_LEARNING"><em>Smoke Detection from Satellite Imagery Using Deep Learning</em></a></li>
 </ul>
 </section>
-<section id="client-server-architecture-of-docker" class="level2">
-<h2 class="anchored" data-anchor-id="client-server-architecture-of-docker">Client-Server Architecture of Docker</h2>
-<p><img src="./Docker architecture.jpg" class="img-fluid"> - The <strong>daemon (server)</strong> receives the commands from the Docker client through CLI or REST API’s - Docker client and daemon can be present on the same host (machine) or different hosts</p>
-</section>
-<section id="install-docker-in-linux" class="level2">
-<h2 class="anchored" data-anchor-id="install-docker-in-linux">Install Docker in Linux</h2>
+<section id="experience" class="level4">
+<h4 data-anchor-id="experience"><strong>Experience</strong>:</h4>
 <ul>
-<li><code>sudo yum -y update</code></li>
-<li><code>sudo yum install -y docker</code></li>
-<li><code>docker</code></li>
-<li><code>docker --version</code></li>
-</ul>
-</section>
-<section id="start-docker" class="level2">
-<h2 class="anchored" data-anchor-id="start-docker">Start Docker</h2>
-<ul>
-<li><code>start docker</code></li>
-<li><code>sudo service docker start</code></li>
-<li><code>sudo usermod-a-G docker "user"</code></li>
-<li><code>docker info</code></li>
-<li><code>docker run hello-world</code> : to run hello-world image</li>
-<li><code>docker images</code> : to get list of images present locally</li>
-<li><code>docker ps</code> : to get list of runnig containers</li>
-<li><code>docker ps-a</code> : to get list of all containers</li>
-</ul>
-</section>
-<section id="stop-docker" class="level2">
-<h2 class="anchored" data-anchor-id="stop-docker">Stop Docker</h2>
-<p><code>sudo service docker stop</code></p>
-</section>
-<section id="uninstall-docker" class="level2">
-<h2 class="anchored" data-anchor-id="uninstall-docker">Uninstall Docker</h2>
-<p><code>sudo yum remove docker</code></p>
-</section>
-<section id="helpful-links" class="level2">
-<h2 class="anchored" data-anchor-id="helpful-links">Helpful Links</h2>
-<ul>
-<li><a href="https://docs.docker.com/get-docker/"><strong>Installation Related</strong></a></li>
-<li><a href="https://docs.aws.amazon.com/AmazonECS/latest/developerguide/create-container-image.html"><strong>Installation Steps for amazon ec2</strong></a></li>
+<li><strong>RippeyAI</strong> | NLP Engineer | April 2022 - June 2024</li>
+<li><strong>Inspiring Lab</strong> | Data Scientist | Oct 2022 - April 2022</li>
+<li><strong>National College of Engineering</strong> | Lecturer | Nov 2018 - Feb 2022</li>
 </ul>
 
 
 </section>
-</section>
-
-</main> <!-- /main -->
+</main></div>
+    </div>
+    <img src="rebanta.jpg" class="about-image
+  rounded " style="width: 15em;">
+  </div>
+</div>
+ <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -244,13 +189,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
-  const icon = "";
-  const anchorJS = new window.AnchorJS();
-  anchorJS.options = {
-    placement: 'right',
-    icon: icon
-  };
-  anchorJS.add('.anchored');
   const isCodeAnnotation = (el) => {
     for (const clz of el.classList) {
       if (clz.startsWith('code-annotation-')) {                     
