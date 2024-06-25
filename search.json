@@ -1,0 +1,65 @@
+[
+  {
+    "objectID": "posts/Docker/docker.html",
+    "href": "posts/Docker/docker.html",
+    "title": "Introduction to Docker",
+    "section": "",
+    "text": "Containers allow a developer to package up an application with all of the parts it needs, such as libraries and other dependencies, and ship it all out as one package.\nDocker is an open source project that automates the deployment of applications inside software containers ## How Docker works? \nA developer will define all the applications and its dependencies and its requirements which is called as Docker File.\nDocker File can be used to create Docker Images\nWhen we run docker image, we will get Docker Containers. So docker containers are the run time instances of docker image and these images can also be stored in an online cloud repositories which is Docker Hub\nIn Docker Hub , there are many publicly available images and you can store your own docker images as well.\nThis image can be pulled to any environment like staging environment or test environment.\n\n\n\n\n\n - The daemon (server) receives the commands from the Docker client through CLI or REST API’s - Docker client and daemon can be present on the same host (machine) or different hosts\n\n\n\n\nsudo yum -y update\nsudo yum install -y docker\ndocker\ndocker --version\n\n\n\n\n\nstart docker\nsudo service docker start\nsudo usermod-a-G docker \"user\"\ndocker info\ndocker run hello-world : to run hello-world image\ndocker images : to get list of images present locally\ndocker ps : to get list of runnig containers\ndocker ps-a : to get list of all containers\n\n\n\n\nsudo service docker stop\n\n\n\nsudo yum remove docker\n\n\n\n\nInstallation Related\nInstallation Steps for amazon ec2"
+  },
+  {
+    "objectID": "posts/Docker/docker.html#what-is-docker",
+    "href": "posts/Docker/docker.html#what-is-docker",
+    "title": "Introduction to Docker",
+    "section": "",
+    "text": "Containers allow a developer to package up an application with all of the parts it needs, such as libraries and other dependencies, and ship it all out as one package.\nDocker is an open source project that automates the deployment of applications inside software containers ## How Docker works? \nA developer will define all the applications and its dependencies and its requirements which is called as Docker File.\nDocker File can be used to create Docker Images\nWhen we run docker image, we will get Docker Containers. So docker containers are the run time instances of docker image and these images can also be stored in an online cloud repositories which is Docker Hub\nIn Docker Hub , there are many publicly available images and you can store your own docker images as well.\nThis image can be pulled to any environment like staging environment or test environment."
+  },
+  {
+    "objectID": "posts/Docker/docker.html#client-server-architecture-of-docker",
+    "href": "posts/Docker/docker.html#client-server-architecture-of-docker",
+    "title": "Introduction to Docker",
+    "section": "",
+    "text": "- The daemon (server) receives the commands from the Docker client through CLI or REST API’s - Docker client and daemon can be present on the same host (machine) or different hosts"
+  },
+  {
+    "objectID": "posts/Docker/docker.html#install-docker-in-linux",
+    "href": "posts/Docker/docker.html#install-docker-in-linux",
+    "title": "Introduction to Docker",
+    "section": "",
+    "text": "sudo yum -y update\nsudo yum install -y docker\ndocker\ndocker --version"
+  },
+  {
+    "objectID": "posts/Docker/docker.html#start-docker",
+    "href": "posts/Docker/docker.html#start-docker",
+    "title": "Introduction to Docker",
+    "section": "",
+    "text": "start docker\nsudo service docker start\nsudo usermod-a-G docker \"user\"\ndocker info\ndocker run hello-world : to run hello-world image\ndocker images : to get list of images present locally\ndocker ps : to get list of runnig containers\ndocker ps-a : to get list of all containers"
+  },
+  {
+    "objectID": "posts/Docker/docker.html#stop-docker",
+    "href": "posts/Docker/docker.html#stop-docker",
+    "title": "Introduction to Docker",
+    "section": "",
+    "text": "sudo service docker stop"
+  },
+  {
+    "objectID": "posts/Docker/docker.html#uninstall-docker",
+    "href": "posts/Docker/docker.html#uninstall-docker",
+    "title": "Introduction to Docker",
+    "section": "",
+    "text": "sudo yum remove docker"
+  },
+  {
+    "objectID": "posts/Docker/docker.html#helpful-links",
+    "href": "posts/Docker/docker.html#helpful-links",
+    "title": "Introduction to Docker",
+    "section": "",
+    "text": "Installation Related\nInstallation Steps for amazon ec2"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome to my blog!",
+    "section": "",
+    "text": "Introduction to Docker\n\n\n\n\n\n\nmachine learning\n\n\nword vectors\n\n\nword embeddings\n\n\ntransformers\n\n\ndeep learning\n\n\n\n\n\n\n\n\n\nOct 23, 2022\n\n\nEr.Rebanta Aryal\n\n\n\n\n\n\nNo matching items"
+  }
+]
