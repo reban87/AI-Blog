@@ -2,7 +2,7 @@
 title: "Er. Rebanta Aryal"
 about:
   template: solana
-  image: rebanta.jpg
+  image: rebanta.jpeg
   links:
     - icon: linkedin
       text: LinkedIn
