@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Er.Rebanta Aryal">
+<meta name="dcterms.date" content="2024-06-26">
 
-<title>Welcome to my blog! -</title>
+<title>Welcome to my blog! - Tokenization in Natural Language Processing (NLP)</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,24 +25,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,77 +68,19 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Welcome to my blog!</span>
     </a>
   </div>
@@ -149,7 +91,7 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">Er. Rebanta Aryal</span></a>
   </li>  
   <li class="nav-item compact">
@@ -175,122 +117,94 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Tokenization in Natural Language Processing (NLP)</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">tokens</div>
+                <div class="quarto-category">embeddings</div>
+                <div class="quarto-category">NLP</div>
+                <div class="quarto-category">vector</div>
+                <div class="quarto-category">transformers</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Er.Rebanta Aryal </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">June 26, 2024</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(2)</span></div><div class="category" data-category="NLP">NLP <span class="quarto-category-count">(1)</span></div><div class="category" data-category="cloud computing">cloud computing <span class="quarto-category-count">(1)</span></div><div class="category" data-category="containers">containers <span class="quarto-category-count">(1)</span></div><div class="category" data-category="docker">docker <span class="quarto-category-count">(1)</span></div><div class="category" data-category="embeddings">embeddings <span class="quarto-category-count">(1)</span></div><div class="category" data-category="microservices">microservices <span class="quarto-category-count">(1)</span></div><div class="category" data-category="services">services <span class="quarto-category-count">(1)</span></div><div class="category" data-category="technology">technology <span class="quarto-category-count">(1)</span></div><div class="category" data-category="tokens">tokens <span class="quarto-category-count">(1)</span></div><div class="category" data-category="transformers">transformers <span class="quarto-category-count">(1)</span></div><div class="category" data-category="vector">vector <span class="quarto-category-count">(1)</span></div></div></div>
+    
 <!-- main -->
-<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
 
+<section id="tokenization-in-nlp" class="level2">
+<h2 class="anchored" data-anchor-id="tokenization-in-nlp"><strong>Tokenization in NLP</strong></h2>
+<p>Tokenization is a fundamental preprocessing step in Natural Language Processing (NLP) that involves breaking down text into smaller units, called tokens. Tokens are typically words, subwords, or characters, and they serve as the building blocks for various NLP tasks.</p>
+<p><img src="./tokens.png" class="img-fluid"></p>
+<section id="tokenization-process" class="level3">
+<h3 class="anchored" data-anchor-id="tokenization-process"><strong>Tokenization Process</strong></h3>
+<ol type="1">
+<li><p><strong>Text Input</strong> : The process begins with a raw text input, which could be a sentence, paragraph, or entire document.</p></li>
+<li><p><strong>Sentence Splitting</strong>: In some cases, the text may be split into sentences, especially when dealing with tasks like text summarization or sentiment analysis at the sentence level.</p></li>
+</ol>
+<p>3.<strong>Word Tokenization</strong>: The primary step involves breaking the text into word-level tokens. Words are separated by spaces or punctuation marks. For example, the sentence “I love NLP!” would be tokenized into [“I”, “love”, “NLP”, “!”].</p>
+<ol start="4" type="1">
+<li><p><strong>Subword Tokenization (optional)</strong>: In cases where a vocabulary may not cover all words (e.g., rare or out-of-vocabulary words), subword tokenization methods like Byte-Pair Encoding (BPE) or WordPiece are used to break words into smaller units or subword tokens.</p></li>
+<li><p><strong>Character Tokenization (optional)</strong>: In some scenarios, character-level tokenization may be employed, where each character is treated as a token. This can be useful for tasks like text generation.</p></li>
+</ol>
+</section>
+<section id="importance-of-tokenization" class="level3">
+<h3 class="anchored" data-anchor-id="importance-of-tokenization"><strong>Importance of Tokenization</strong></h3>
+<ol type="1">
+<li><p><strong>Text Processing</strong>: Tokenization is a crucial step for text processing because it structures the text data into units that can be manipulated and analyzed more easily.</p></li>
+<li><p><strong>Feature Extraction</strong>: Tokens serve as the basis for extracting features from text, enabling the use of machine learning algorithms for NLP tasks.</p></li>
+<li><p><strong>Vocabulary Management</strong>: Tokenization is closely tied to vocabulary management, as tokens correspond to entries in the vocabulary or word embeddings.</p></li>
+<li><p><strong>Language Understanding</strong>: It helps in understanding the syntactic and semantic structure of the text, which is essential for many NLP tasks like part-of-speech tagging, named entity recognition, and sentiment analysis.</p></li>
+</ol>
+</section>
+<section id="challenges-in-tokenization" class="level3">
+<h3 class="anchored" data-anchor-id="challenges-in-tokenization"><strong>Challenges in Tokenization</strong></h3>
+<ol type="1">
+<li><p><strong>Ambiguity</strong>: Some words may have multiple meanings or be part of different phrases, leading to ambiguity during tokenization. For instance, “book” can refer to a noun or a verb.</p></li>
+<li><p><strong>Contractions and Apostrophes</strong>: Words with contractions and possessive forms can be challenging. For example, “can’t” could be tokenized as “can” and “’t” or as a single token “can’t.”</p></li>
+<li><p><strong>Hyphenated Words</strong>: Words with hyphens, such as “state-of-the-art,” pose a challenge as they can be tokenized differently depending on the context.</p></li>
+<li><p><strong>Languages with No Spaces</strong>: In languages like Chinese and Japanese, words are not separated by spaces, making word tokenization more complex.</p></li>
+<li><p><strong>Out-of-Vocabulary (OOV) Words</strong>: Tokenization may not handle OOV words well, especially when using fixed vocabularies or subword tokenization methods.</p></li>
+<li><p><strong>Domain-Specific Jargon</strong>: Tokenizing domain-specific terms and jargon correctly can be challenging, as they may not appear in standard language models’ vocabularies.</p></li>
+<li><p><strong>Special Characters</strong>: Tokenization of special characters, emojis, or code snippets can require specialized handling. Addressing these challenges often involves using advanced tokenization techniques, customizing tokenizers for specific tasks, or employing subword tokenization methods like Byte-Pair Encoding or WordPiece to handle OOV words and linguistic nuances more effectively. Tokenization is a critical preprocessing step in NLP, and its accuracy can significantly impact the performance of downstream NLP tasks.</p></li>
+</ol>
 
 
+</section>
+</section>
 
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="tokens,embeddings,NLP,vector,transformers" data-listing-date-sort="1719339300000" data-listing-file-modified-sort="1719389440141" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="497">
-<div class="thumbnail">
-<p><a href="./posts/tokenization/tokenization.html" class="no-external"></a></p><a href="./posts/tokenization/tokenization.html" class="no-external">
-<p class="card-img-top"><img src="posts/tokenization/tokens.png"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./posts/tokenization/tokenization.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/tokenization/tokenization.html" class="no-external">Tokenization in Natural Language Processing (NLP)</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/tokenization/tokenization.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('tokens'); return false;">
-tokens
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('embeddings'); return false;">
-embeddings
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('NLP'); return false;">
-NLP
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('vector'); return false;">
-vector
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('transformers'); return false;">
-transformers
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/tokenization/tokenization.html" class="no-external">Tokenization is a fundamental preprocessing step in Natural Language Processing (NLP) that involves breaking down text into smaller units, called tokens. Tokens are…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/tokenization/tokenization.html" class="no-external">
-<div class="listing-date">
-Jun 26, 2024
-</div>
-<div class="listing-author">
-Er.Rebanta Aryal
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="docker,containers,cloud computing,microservices,technology,services" data-listing-date-sort="1666462500000" data-listing-file-modified-sort="1719388592351" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="284">
-<div class="thumbnail">
-<p><a href="./posts/Docker/docker.html" class="no-external"></a></p><a href="./posts/Docker/docker.html" class="no-external">
-<p class="card-img-top"><img src="posts/Docker/docker.png" alt="Image"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./posts/Docker/docker.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/Docker/docker.html" class="no-external">Introduction to Docker</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/Docker/docker.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('docker'); return false;">
-docker
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('containers'); return false;">
-containers
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('cloud computing'); return false;">
-cloud computing
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('microservices'); return false;">
-microservices
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('technology'); return false;">
-technology
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('services'); return false;">
-services
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/Docker/docker.html" class="no-external"> - The <strong>daemon (server)</strong> receives the commands from the Docker client through CLI or REST API’s - Docker client and daemon can be present on the same host (machine) or…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/Docker/docker.html" class="no-external">
-<div class="listing-date">
-Oct 23, 2022
-</div>
-<div class="listing-author">
-Er.Rebanta Aryal
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
