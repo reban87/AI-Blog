@@ -5,6 +5,8 @@ This section will introduce the concept, highlighting its ability to produce ori
 It will touch on the rapid advancements in recent years, particularly with models like GPT (Generative Pre-trained Transformer) for text and DALL-E for images. 
 
 ## How does Generative AI work?
+![Image](./GenAI-Model.png)
+image source: https://www.tredence.com/generative-ai-101
 
 Generative AI is a complex field that combines various techniques from machine learning and neural networks. To understand how it works, let's break it down into key components and processes:
 ### Foundation: Neural Networks
