@@ -1,3 +1,10 @@
+---
+title: "Introduction to Generative AI"
+author: "Er.Rebanta Aryal"
+categories: [GenAI, LLMs, Machine Learning, technology, services]
+date: "2024-09-25"
+---
+
 ## Introduction to Generative AI
 
 Generative AI refers to artificial intelligence systems capable of creating new content, such as text, images, audio, or video.
