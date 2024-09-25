@@ -3,6 +3,8 @@
 Generative AI refers to artificial intelligence systems capable of creating new content, such as text, images, audio, or video.
 This section will introduce the concept, highlighting its ability to produce original outputs based on patterns learned from training data.
 It will touch on the rapid advancements in recent years, particularly with models like GPT (Generative Pre-trained Transformer) for text and DALL-E for images. 
+![Image](./genai.png)
+
 
 ## How does Generative AI work?
 ![Image](./GenAI-Model.png)
