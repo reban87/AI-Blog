@@ -1,23 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://reban87.github.io/AI-Blog/posts/Docker/docker.html</loc>
+    <loc>https://reban87.github.io/AI-Blog/posts/hands_on_naive_rag/rag.html</loc>
+    <lastmod>2024-10-07T08:31:40.875Z</lastmod>
+  </url>
+  <url>
+    <loc>https://reban87.github.io/AI-Blog/posts/tokenization/tokenization.html</loc>
     <lastmod>2024-09-25T03:41:54.636Z</lastmod>
-  </url>
-  <url>
-    <loc>https://reban87.github.io/AI-Blog/posts/Introduction to Generative AI/genai.html</loc>
-    <lastmod>2024-09-25T05:56:30.944Z</lastmod>
-  </url>
-  <url>
-    <loc>https://reban87.github.io/AI-Blog/about.html</loc>
-    <lastmod>2024-09-25T03:41:54.634Z</lastmod>
   </url>
   <url>
     <loc>https://reban87.github.io/AI-Blog/index.html</loc>
     <lastmod>2024-09-25T03:41:54.634Z</lastmod>
   </url>
   <url>
-    <loc>https://reban87.github.io/AI-Blog/posts/tokenization/tokenization.html</loc>
+    <loc>https://reban87.github.io/AI-Blog/about.html</loc>
+    <lastmod>2024-09-25T03:41:54.634Z</lastmod>
+  </url>
+  <url>
+    <loc>https://reban87.github.io/AI-Blog/posts/Introduction to Generative AI/genai.html</loc>
+    <lastmod>2024-09-25T05:56:30.944Z</lastmod>
+  </url>
+  <url>
+    <loc>https://reban87.github.io/AI-Blog/posts/Docker/docker.html</loc>
     <lastmod>2024-09-25T03:41:54.636Z</lastmod>
   </url>
 </urlset>

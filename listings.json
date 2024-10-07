@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/hands_on_naive_rag/rag.html",
       "/posts/Introduction to Generative AI/genai.html",
       "/posts/tokenization/tokenization.html",
       "/posts/Docker/docker.html"

@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Er.Rebanta Aryal">
+<meta name="dcterms.date" content="2024-10-09">
 
-<title>Welcome to my blog!</title>
+<title>Getting Started with Naive Retrieval-Augmented Generation: A Practical Guide – Welcome to my blog!</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,27 +22,59 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,77 +102,19 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Welcome to my blog!</span>
     </a>
   </div>
@@ -149,7 +125,7 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">Er. Rebanta Aryal</span></a>
   </li>  
   <li class="nav-item compact">
@@ -175,221 +151,115 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Getting Started with Naive Retrieval-Augmented Generation: A Practical Guide</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">GenAI</div>
+                <div class="quarto-category">LLMs</div>
+                <div class="quarto-category">Machine Learning</div>
+                <div class="quarto-category">technology</div>
+                <div class="quarto-category">services</div>
+                <div class="quarto-category">RAG</div>
+                <div class="quarto-category">Vectorstore</div>
+                <div class="quarto-category">Retrieval</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Er.Rebanta Aryal </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">October 9, 2024</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(4)</span></div><div class="category" data-category="GenAI">GenAI <span class="quarto-category-count">(2)</span></div><div class="category" data-category="LLMs">LLMs <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Machine Learning">Machine Learning <span class="quarto-category-count">(2)</span></div><div class="category" data-category="NLP">NLP <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RAG">RAG <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Retrieval">Retrieval <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Vectorstore">Vectorstore <span class="quarto-category-count">(1)</span></div><div class="category" data-category="cloud computing">cloud computing <span class="quarto-category-count">(1)</span></div><div class="category" data-category="containers">containers <span class="quarto-category-count">(1)</span></div><div class="category" data-category="docker">docker <span class="quarto-category-count">(1)</span></div><div class="category" data-category="embeddings">embeddings <span class="quarto-category-count">(1)</span></div><div class="category" data-category="microservices">microservices <span class="quarto-category-count">(1)</span></div><div class="category" data-category="services">services <span class="quarto-category-count">(3)</span></div><div class="category" data-category="technology">technology <span class="quarto-category-count">(3)</span></div><div class="category" data-category="tokens">tokens <span class="quarto-category-count">(1)</span></div><div class="category" data-category="transformers">transformers <span class="quarto-category-count">(1)</span></div><div class="category" data-category="vector">vector <span class="quarto-category-count">(1)</span></div></div></div>
+    
 <!-- main -->
-<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
 
+<section id="getting-started-with-naive-retrieval-augmented-generation-a-practical-guide" class="level2">
+<h2 class="anchored" data-anchor-id="getting-started-with-naive-retrieval-augmented-generation-a-practical-guide">Getting Started with Naive Retrieval-Augmented Generation: A Practical Guide</h2>
+<p><strong>A Base LLM (Large Language Model)</strong> such as GPT-3, GPT-4, or similar, is a type of AI that has been trained on large amounts of text data to predict and generate human-like text based on input prompts. These models are pre-trained on diverse text sources (books, websites, etc.) to capture patterns, context, grammar, facts, and common-sense reasoning from the data. However, base LLMs come with several limitations:</p>
+<ol type="1">
+<li><p>Limited and Static Knowledge Base LLMs have limited knowledge at the time of their training, making them incapable of retrieving or understanding new information after that point. They cannot update themselves with real-time data or events.</p></li>
+<li><p>Lack of Specific Knowledge LLMs are trained on general datasets, so they lack depth in specialized or niche domains. As a result, they may produce inaccurate or shallow answers when queried on specific or technical topic.</p></li>
+<li><p>Hallucination LLMs can generate false or fabricated information that sounds plausible but is factually incorrect. This limits their reliability, especially when accurate information is critical.</p></li>
+<li><p>No source Attribution These models cannot provide the original sources of their information, making it difficult to verify the accuracy or credibility of their responses. This can be problematic in applications where source validation is crucial.</p></li>
+<li><p>Privacy and Security Concern LLMs may unintentionally generate or expose private or sensitive data that was included in their training data, raising concerns around privacy and confidentiality in their usage.</p></li>
+</ol>
+<p>Given these limitations, it’s necessary to integrate a knowledge base into the LLM. There are paradigms to do this: Retrieval-Augmented Generation (RAG) and Fine-tuning. In this session, our focus will be on RAG.</p>
+<p><strong>Retrieval Augmented Generation (RAG)</strong> is an AI framework designed to enhance the performance of large language model’s (LLM) response. It makes use of external knowledge sources to enhance these models’ generation capabilities. Let us understand the RAG Architecture with an example of learning RAG from a database of articles on RAG. The architecture is implemented using LangChain. <img src="./rag.png" class="img-fluid" alt="Image"></p>
+<p><strong>Step1: Document Loader</strong> Load all the documents from a directory so they can be queried in your system. Depending on the type of files you have (e.g., text files, PDFs, etc.), LangChain offers different document loaders to handle various formats. In this example, we will focus on loading .txt files from a specified directory using the DirectoryLoader class.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">from</span> langchain.document_loaders import DirectoryLoader, TextLoader</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">loader</span> = DirectoryLoader<span class="er">(</span><span class="va">path</span><span class="op">=</span><span class="st">'&lt;PATH_TO_YOUR_DATA_DIRECTORY&gt;'</span>, <span class="ex">glob</span> = <span class="st">'./*.txt'</span>, loader_cls= TextLoader<span class="kw">)</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="ex">documents</span> = loader.load<span class="er">(</span><span class="kw">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><strong>Step2. Split the texts</strong> Once you’ve loaded all your documents, the next step is to split them into smaller chunks. This is crucial in Retrieval-Augmented Generation (RAG) because <strong>Large chunks:</strong> If your chunks are too big, parts of the document that are out of context may get included in the retrieval, leading to inaccurate or irrelevant responses. <strong>Small chunks:</strong> If your chunks are too small, you risk losing important context, which can make the information fragmented and less meaningful. To address this, you can use the text_splitter module from LangChain, which allows you to break down your documents into manageable and context-preserving chunks.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">from</span> langchain.text_splitter import RecursiveCharacterTextSplitter</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Initialize the text splitter</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="ex">text_splitter</span> = RecursiveCharacterTextSplitter<span class="er">(</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    <span class="va">chunk_size</span><span class="op">=</span>1000,   <span class="co"># Size of each chunk (e.g., 1000 characters)</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    <span class="va">chunk_overlap</span><span class="op">=</span>200  <span class="co"># Number of overlapping characters between chunks</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="kw">)</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Split each document into chunks</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="ex">document_chunks</span> = text_splitter.split_documents<span class="er">(</span><span class="ex">documents</span><span class="kw">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><strong>Step3. Document Embeddings and Vector Stores</strong> Once your documents have been chunked into manageable pieces, the next step is to convert these text chunks into numerical representations (embeddings) that can be stored and queried efficiently. This is where document embeddings and vector stores come into play.</p>
+<p>Embeddings represent the semantic meaning of a piece of text as a vector of numbers. These vectors are then stored in a vector database, which enables fast and efficient similarity search based on user queries.</p>
+<p>Here’s how this process works: 1. Create Embeddings Using Hugging Face Models You can use models like sentence-transformers/all-mpnet-base-v2 from Hugging Face to generate high-quality embeddings for the text chunks. These embeddings allow the system to capture the meaning of the text for similarity-based retrieval. ```bash from langchain.embeddings import HuggingFaceEmbeddings from sentence_transformers import SentenceTransformer</p>
+<pre><code># Define the model for generating embeddings
+model_name = 'sentence-transformers/all-mpnet-base-v2'
+model = SentenceTransformer(model_name, device='cpu')  # Use 'cuda' for GPU acceleration
+
+# Convert the text chunks into embeddings (numerical vectors)
+texts = [chunk.page_content for chunk in document_chunks]  # Extract text content from each chunk
+embeddings = model.encode(texts, normalize_embeddings=True)  # Normalize the embeddings
+```</code></pre>
+<ol start="2" type="1">
+<li><p>Store Embeddings in a Vector Database Once the text chunks have been converted into embeddings, the next step is to store them in a vector database like Chroma, which enables fast and efficient similarity search based on user queries.</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">from</span> langchain.vectorstores import Chroma</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a vector store using the chunked documents and their corresponding embeddings</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="ex">vectordb</span> = Chroma.from_documents<span class="er">(</span><span class="ex">document_chunks,</span> embeddings<span class="kw">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+</ol>
+<p><strong>Step4: Retriever</strong> In this step, you will implement the retriever component, which is responsible for searching through the vector store to find relevant document chunks based on a user query. Here’s a breakdown of how this works:</p>
+<p><strong>1. Converting Vector Store to Retriever</strong> The Chroma vector store you created earlier holds the embeddings of your document chunks. To search through these embeddings efficiently and retrieve relevant chunks, you convert the vector store into a retriever.</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Convert the vector store into a retriever</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="ex">retriever</span> = vectordb.as_retriever<span class="er">(</span><span class="kw">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><strong>2. Submitting a Query and Retrieving Relevant Documents</strong> Once the vector store has been converted to a retriever, you can pass a query to it. The retriever will: Embed the query (i.e., convert it into a numerical representation). Compare the query embedding with the stored document embeddings using similarity measures like cosine similarity. Return the most relevant document chunks based on this comparison. Here’s how you can retrieve the most relevant chunks:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Retrieve relevant documents by passing a query</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="ex">result</span> = retriever.get_relevant_documents<span class="er">(</span><span class="st">"What is LangSmith?"</span><span class="kw">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>This retriever step is crucial because it determines the quality of the context provided to the generation model in a Retrieval-Augmented Generation (RAG) system. The more relevant the retrieved chunks, the more accurate and informative the final generated response will be.</p>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>In this blog, we’ve covered the key steps to building a Retrieval-Augmented Generation (RAG) system. We started by loading and chunking documents, then created embeddings to represent the text meaningfully. These embeddings were stored in a vector database (Chroma) for efficient retrieval. Finally, we used a retriever to fetch relevant document chunks based on user queries. This setup provides a powerful framework for delivering accurate, context-aware information, making it ideal for tasks like question answering and document search.</p>
 
 
+</section>
 
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="GenAI,LLMs,Machine Learning,technology,services,RAG,Vectorstore,Retrieval" data-listing-date-sort="1728411300000" data-listing-file-modified-sort="1728289900875" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1133">
-<div class="thumbnail">
-<p><a href="./posts/hands_on_naive_rag/rag.html" class="no-external"></a></p><a href="./posts/hands_on_naive_rag/rag.html" class="no-external">
-<p class="card-img-top"><img src="posts/hands_on_naive_rag/rag.png" alt="Image"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./posts/hands_on_naive_rag/rag.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/hands_on_naive_rag/rag.html" class="no-external">Getting Started with Naive Retrieval-Augmented Generation: A Practical Guide</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/hands_on_naive_rag/rag.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('GenAI'); return false;">
-GenAI
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('LLMs'); return false;">
-LLMs
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Machine Learning'); return false;">
-Machine Learning
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('technology'); return false;">
-technology
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('services'); return false;">
-services
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('RAG'); return false;">
-RAG
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Vectorstore'); return false;">
-Vectorstore
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Retrieval'); return false;">
-Retrieval
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/hands_on_naive_rag/rag.html" class="no-external"><strong>A Base LLM (Large Language Model)</strong> such as GPT-3, GPT-4, or similar, is a type of AI that has been trained on large amounts of text data to predict and generate human-like…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/hands_on_naive_rag/rag.html" class="no-external">
-<div class="listing-date">
-Oct 9, 2024
-</div>
-<div class="listing-author">
-Er.Rebanta Aryal
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="GenAI,LLMs,Machine Learning,technology,services" data-listing-date-sort="1727201700000" data-listing-file-modified-sort="1727243790944" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1266">
-<div class="thumbnail">
-<p><a href="./posts/Introduction to Generative AI/genai.html" class="no-external"></a></p><a href="./posts/Introduction to Generative AI/genai.html" class="no-external">
-<p class="card-img-top"><img src="posts/Introduction to Generative AI/genai.png" alt="Image"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./posts/Introduction to Generative AI/genai.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/Introduction to Generative AI/genai.html" class="no-external">Introduction to Generative AI</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/Introduction to Generative AI/genai.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('GenAI'); return false;">
-GenAI
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('LLMs'); return false;">
-LLMs
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Machine Learning'); return false;">
-Machine Learning
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('technology'); return false;">
-technology
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('services'); return false;">
-services
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/Introduction to Generative AI/genai.html" class="no-external">Generative AI refers to artificial intelligence systems capable of creating new content, such as text, images, audio, or video. This section will introduce the concept…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/Introduction to Generative AI/genai.html" class="no-external">
-<div class="listing-date">
-Sep 25, 2024
-</div>
-<div class="listing-author">
-Er.Rebanta Aryal
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="tokens,embeddings,NLP,vector,transformers" data-listing-date-sort="1719339300000" data-listing-file-modified-sort="1727235714636" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="497">
-<div class="thumbnail">
-<p><a href="./posts/tokenization/tokenization.html" class="no-external"></a></p><a href="./posts/tokenization/tokenization.html" class="no-external">
-<p class="card-img-top"><img src="posts/tokenization/tokens.png"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./posts/tokenization/tokenization.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/tokenization/tokenization.html" class="no-external">Tokenization in Natural Language Processing (NLP)</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/tokenization/tokenization.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('tokens'); return false;">
-tokens
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('embeddings'); return false;">
-embeddings
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('NLP'); return false;">
-NLP
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('vector'); return false;">
-vector
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('transformers'); return false;">
-transformers
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/tokenization/tokenization.html" class="no-external">Tokenization is a fundamental preprocessing step in Natural Language Processing (NLP) that involves breaking down text into smaller units, called tokens. Tokens are…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/tokenization/tokenization.html" class="no-external">
-<div class="listing-date">
-Jun 26, 2024
-</div>
-<div class="listing-author">
-Er.Rebanta Aryal
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-categories="docker,containers,cloud computing,microservices,technology,services" data-listing-date-sort="1666462500000" data-listing-file-modified-sort="1727235714636" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="284">
-<div class="thumbnail">
-<p><a href="./posts/Docker/docker.html" class="no-external"></a></p><a href="./posts/Docker/docker.html" class="no-external">
-<p class="card-img-top"><img src="posts/Docker/docker.png" alt="Image"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./posts/Docker/docker.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/Docker/docker.html" class="no-external">Introduction to Docker</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/Docker/docker.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('docker'); return false;">
-docker
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('containers'); return false;">
-containers
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('cloud computing'); return false;">
-cloud computing
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('microservices'); return false;">
-microservices
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('technology'); return false;">
-technology
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('services'); return false;">
-services
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/Docker/docker.html" class="no-external"> - The <strong>daemon (server)</strong> receives the commands from the Docker client through CLI or REST API’s - Docker client and daemon can be present on the same host (machine) or…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/Docker/docker.html" class="no-external">
-<div class="listing-date">
-Oct 23, 2022
-</div>
-<div class="listing-author">
-Er.Rebanta Aryal
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
